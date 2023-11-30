@@ -1,7 +1,13 @@
+basic bash meta for non programmer friend
+
 * meta
     * `man` generates a system manual page for a command that is its own executable (almost all of them)
         * `man python`
     * `-h` is a flag for help, which many programs implement (but it's up to them)
+    * `!a` run last command you ran beginning with a
+        * can be longer also `!python`
+        * doesn't last between sessions (cleanly)
+    * everything listed in here pretty much has flags, you can read more on them if they interest you
 * structure
     * many commands accept flags, which are generally in the form of `-f` or `--long-flag`
         * but this is just a conventional standard, some programs will accept `f` or `-long-flag`
@@ -41,6 +47,23 @@
         * it accepts input again
     * ctrl-z pause the current program, it is treated as being in the background and will restart when moved to the foreground
         * or `bg` unpause, run in background
+    * `top` interactive task manager
+    * `ps` non-interactively, task lists
+        * `ps` everything in *your* terminal
+        * `ps a` everything in *a* terminal
+        * `ps x` everything else
+        * `ps u` list with more info
+        * these can be combined, and there are other flags
+        * with `x`, will give you too much to sort through manually
+* files
+    * `file` gives you a file type
+        * `file suspiciousinternetmedia.exe.wtf`
+    * `less` interactively scroll through a text file
+    * `head` view the first (by default) 10 lines of a text file
+    * `find` list anything matching a name in a folder and all its subfolders, *with full path names*
+        * `find .` every file in the current folder and its subfolders
+        * `find images/REDACTED` every file in the folder images/REDACTED
+
 
 
 ### see also actual comprehensive references etc
